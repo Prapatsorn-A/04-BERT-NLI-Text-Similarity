@@ -63,7 +63,9 @@ This project focuses on training a BERT model from scratch, fine-tuning it for s
 - **Model Architecture:**
   - A Siamese network structure was implemented, where two BERT models share weights.
   - The model was trained using a classification objective function:
-  > $$ o = softmax(W^T ⋅ (u, v, |u-v|))$$
+ $$ 
+ o = softmax(W^T ⋅ (u, v, |u-v|))
+ $$
   where $u$ and $v$ are sentence embeddings, and $W$ is a learnable weight matrix.
 
 - **Training:**
